@@ -1,2 +1,2 @@
-# array-question
-A collection of array related problems and their solutions
+
+A collection of questions and solution od data structure and algorithm
