@@ -1,2 +1,2 @@
 
-A collection of questions and solution od data structure and algorithm
+A collection of questions and solution of data structure and algorithm
