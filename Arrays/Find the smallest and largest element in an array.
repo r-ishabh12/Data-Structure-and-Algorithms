@@ -1,0 +1,30 @@
+////First Approach
+public class Array{
+static int[] smallestLargest(int[] arr){
+int[] ans = new int[2];
+int smallest = Integer.MAX_VALUE;
+int largest = Integer.MIN_VALUE;
+
+for(int i = 0; i < arr.length; i++){
+if( arr[i] < smalest){
+smalllest = arr[i];
+}
+else if(arr[i] > largest){
+largest = arr[i];
+}
+}
+
+ans[0] = smallest;
+ans[1] = largest;
+
+return ans;
+}
+}
+////Second Approach
+public class Array{
+static int[] smallestLargest(int [] arr){
+Arrays.sort(arr);
+int[] ans = {arr[0] , arr[arr.length - 1]};
+return ans;
+}
+}
