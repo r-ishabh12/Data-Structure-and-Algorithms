@@ -1,0 +1,12 @@
+public class Array{
+static boolean checkArrayIsSorted(int[] arr){
+int check = true;
+for(int i = 0; i < arr.length; i++){
+if(arr[i] < arr[i-1]){
+check = false;
+break;
+}
+}
+return check;
+}
+}
