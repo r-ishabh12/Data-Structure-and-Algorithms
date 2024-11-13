@@ -1,0 +1,24 @@
+public class Array{
+static void secondNu(int[] arr){
+int mx = Integer.MIN_VALUE;
+for( int i = 0; i < arr.length; i++){
+if(arr[i] > mx){
+mx = arr[i];
+}
+}
+for(int i = 0; i < arr.length; i++){
+if(arr[i] == mx){
+arr[i] = Integer.MIN_VALUE;
+}
+}
+int mx = Integer.MIN_VALUE;
+for( int i = 0; i < arr.length; i++){
+if( arr[i] > mx){
+mx = arr[i];
+}
+}
+System.out.println(mx);
+}
+}
+
+
