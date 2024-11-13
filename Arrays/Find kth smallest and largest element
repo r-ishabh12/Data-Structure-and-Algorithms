@@ -1,0 +1,8 @@
+public class Array{
+static int[] smallestLargest(int[] arr, int k){
+Arrays.sort(arr);
+int[] ans = {arr[k-1], arr[arr.length-k];
+return ana;
+}
+}
+}
