@@ -1,0 +1,41 @@
+//first approach
+public class Array{
+  static void rotateArray(int[] arr, int k){
+    int n = arr.length;
+    k = k % n;
+    int[] ans = new int[n];
+    int j = 0;
+
+    for(int i = n-k; i < n; i++){
+      ans[j++] = arr[i];
+      }
+    for(int i = 0; i < n-k; i++){
+      ans[j++] = arr[i];
+      }
+    for(int i = 0; i < n; i++){
+      System.out.println(ans[i]);
+    }
+  }
+  }
+////Second Approach
+public class Array{
+static void swapp(int[] arr, int i, int j){
+  int temp = arr[i];
+  arr[i] = arr[j];
+  arr[j] = temp;
+  }
+static void reverse(int[] arr, int i, int j){
+  while(i < j){
+    swapp(arr, i ,j);
+    i++;
+    j--;
+    }
+  }
+static void rotateInPlace(int[] arr, int k){
+  int n = arr.length;
+  k = k % n;
+  reverse(arr, 0, n-k-1);
+  reverse(arr, n-k, n-1);
+  reverse(arr, 0, n-1);
+  }
+  }
